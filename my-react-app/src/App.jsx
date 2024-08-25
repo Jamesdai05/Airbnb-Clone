@@ -1,10 +1,12 @@
 import "./App.css";
+import Header from "./Components/Header";
 
 function App() {
   return (
-    <h1 className="text-6xl fond-bold underline text-center">
-      Hello vite React!
-    </h1>
+    <div>
+      <Header />
+      <main>Here is Body</main>
+    </div>
   );
 }
 
