@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className="p-3 flex justify-between">
+      <header className="flex justify-between">
         <a className="flex text-center gap-1 text-red-300">
           <PaperAirplaneIcon className="w-10 h-10 -rotate-90" />
           <span className="font-bold text-3xl">Airbnd</span>
