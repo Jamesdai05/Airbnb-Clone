@@ -1,5 +1,5 @@
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
-import { UserIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -33,7 +33,10 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="flex items-center gap-3 border border-gray-300 rounded-full py-2 px-4">
+        <Link
+          to={"/login"}
+          className="flex items-center gap-3 border border-gray-300 rounded-full py-2 px-4"
+        >
           {/* 3bar for the user icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +67,7 @@ const Header = () => {
               />
             </svg>
           </div>
-        </div>
+        </Link>
       </header>
     </>
   );
